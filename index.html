@@ -391,6 +391,7 @@
   <li><a href="#ville">Ville</a></li>
   <li><a href="#about">À propos</a></li>
   <li><a href="#contact">Contact</a></li>
+  <li id="google_translate_element" style="margin-left:0.5rem;"></li> 
 </ul>
   </nav>
 </header>
@@ -649,7 +650,36 @@
     </a>
   </div>
 </section>
+<!-- Google Translate -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'fr',
+      includedLanguages: 'fr,en,ar',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+<style>
+  /* Style léger pour coller au site */
+  #google_translate_element select {
+    background: #0A0A0A;
+    color: #C9A86C;
+    border: 1px solid #C9A86C;
+    padding: 0.35rem 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.75rem;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .goog-te-banner-frame { display: none !important; }
+  body { top: 0 !important; }
+  .goog-logo-link, .goog-te-gadget span { display: none !important; }
+  .goog-te-gadget { font-size: 0 !important; }
+</style>
 <!-- Bouton WhatsApp flottant -->
 <a href="https://wa.me/237697000930?text=Bonjour%20KyriosPic%2C%20je%20souhaite%20r%C3%A9server%20une%20s%C3%A9ance." 
    target="_blank" 
